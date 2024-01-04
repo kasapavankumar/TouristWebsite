@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel World</title>
+    <link rel="shortcut icon" href="./images/title-icon.svg" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <!-- preloader-->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <img src="./images/preloader.svg" width="50" height="50" alt="">
+        </div>
+    </div>
+    <!-- #HEADER SECTION (NAVBAR)-->
+    <div class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="" width="180px" height="30px">
+            </div>
+            <div class="navbar-top ">
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="#home" class="nav-link ">Home</a></li>
+                    <li class="nav-item"><a href="#foot" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#price" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    
+                </ul>
+                <nav class="nav-btn">
+                    <button class="login-btn" >Login</button>
+                    <button class="signup-btn" >Sign Up</button>
+                </nav>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="menu"><i class="fa-solid fa-bars" id="nav-menu"></i></a>
+            </div>
+        </div>
+    </div>
+   <!-- #form box-->
+   <div class="form-box">
+    <!-- #registration form -->
+        <a href="#" class="close-icon"><i class="fa-solid fa-xmark"></i></a>
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account?<a href="#" class="login-link" onclick="login()">Login</a></span>
+                <h1>Sign Up</h1>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" placeholder="Firstname" required class="input-field">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Lastname" required class="input-field">
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required class="input-field">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required class="input-field">
+            </div>
+            <div class="input-box">
+                <input type="submit" value="Submit" class=" input-btn">
+            </div>
+            <div class="two-cols">
+                <div class="one">
+                    <input type="checkbox" id="check-register">
+                    <label for="check-register">Remember Me</label>
+                </div>
+                <div class="two">
+                    <a href="#">Terms & conditions</a>
+                </div>
+            </div>
+        </div>
+        <!-- #login -->
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Don't have an account?<a href="#" class="login-link" onclick="signin()">SignUp</a></span>
+                <h1>Login</h1>
+            </div>
+            
+            <div class="input-box">
+                <input type="email" placeholder="Email" required class="input-field">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required class="input-field">
+            </div>
+            <div class="input-box">
+                <input type="submit" value="Sign In" class=" input-btn">
+            </div>
+            <div class="two-cols">
+                <div class="one">
+                    <input type="checkbox" id="check-login">
+                    <label for="check-login">Remember Me</label>
+                </div>
+                <div class="two">
+                    <a href="#">Forget password?</a>
+                </div>
+            </div>
+        </div>
+   </div>
+
+    <section class="hero" id="home" style="background-image: url(./images/hero-bg.jpg);">
+        <div class="container ">
+            <div class="hero-content">
+                <div class="hero-explore">
+                    <p>Explore the World</p>
+                    <img src="./images/title-icon.svg" alt="">
+                </div>
+                <div class="hero-1024">
+                    <div class="hero-title">
+                        <h1>It’s a Big World Out There, Go Explore</h1>
+                        <p>We always make our customer happy by providing
+                            as many choices as possible</p>
+                        <button class="hero-btn">Plan a Trip <i class="fa-solid fa-chevron-right"></i></button>
+                        <div class="hero-trip">
+                            <img src="./images/hero-button-img.jpg" alt="">
+                            <p><i class="fa-solid fa-circle-play"></i>Watch our Story</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <img src="./images/hero-banner.png" alt="" height="735" width="600" class="hero-banner">
+        </div>
+        <!-- # service section--> 
+        <div class="service-content hero-content " id="service">
+            <div class="service-title hero-title ">
+                <p><span style="color: blue;">What We Serve</span></p>
+                <h1>Top Values For You</h1>
+                <p>Try a variety of benefits when
+                    using our services.</p>
+            </div>
+            <div class="service-card" >
+                <div class="card">
+                    <img src="./images/service-icon-1.svg" alt="icon" width="70" height="50">
+                    <h3>Lot Of Choices</h3>
+                    <p>Total 460+ destinations that we work with.</p>
+                </div>
+                <div class="card" style="background-color: rgb(244, 228, 200);">
+                    <img src="./images/service-icon-2.svg" alt="icon" width="70" height="50">
+                    <h3>Best Tour Guide</h3>
+                    <p>Our tour guide with 15+ years of experience.</p>
+                </div>
+                <div class="card" style="background-color: rgb(234, 226, 247);">
+                    <img src="./images/service-icon-3.svg" alt="icon" width="70" height="50">
+                    <h3>Easy Booking</h3>
+                    <p>With an easy and fast ticket purchase process.</p>
+                </div>
+            </div>
+        </div>
+        <!-- #destination section-->
+        <div class=" desti" id="price">
+            <div class="desti-content">
+                <div class="hero-title desti-title">
+                    <p><span style="color: blue;">Top destination</span></p>
+                    <h1>Explore Top Destination</h1>
+                </div>
+                <div class="desti-list">
+                    <div class="desti-cards">
+                        <div class="desti-card ">
+                            <img src="./images/destination-1.jpg" alt="Enjoy the Beauty of the del Pincio">
+                            <p class="card-price">$340</p>
+                        </div>
+                        <div class="card-content ">
+                            <div class="card-title ">
+                                <h3>Enjoy the Beauty of the del Pincio</h3>
+                            </div>
+                            <p class="card-address">Rome, Italy</p>
+                            <div class="card-rating">
+                                <i class="fa-solid fa-star">4.7</i>
+                                <p>(11.1k Review) </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="desti-cards">
+                        <div class="desti-card ">
+                            <img src="./images/destination-2.jpg" alt="Enjoy the Beauty of the del Pincio">
+                            <p class="card-price">$340</p>
+                        </div>
+                        <div class="card-content ">
+                            <div class="card-title ">
+                                <h3>Beauty of the Pakistan Monument</h3>
+                            </div>
+                            <p class="card-address">Islamabad, Pakistan</p>
+                            <div class="card-rating">
+                                <i class="fa-solid fa-star">4.6</i>
+                                <p>(16.9k Review)</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="desti-cards">
+                        <div class="desti-card ">
+                            <img src="./images/destination-3.jpg" alt="Enjoy the Beauty of the del Pincio">
+                            <p class="card-price">$340</p>
+                        </div>
+                        <div class="card-content ">
+                            <div class="card-title ">
+                                <h3>Enjoy the Beauty of the Burj Khalifa</h3>
+                            </div>
+                            <p class="card-address">Skyscraper in Dubai</p>
+                            <div class="card-rating">
+                                <i class="fa-solid fa-star">4.7</i>
+                                <p>(120k Review)</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="desti-cards">
+                        <div class="desti-card ">
+                            <img src="./images/destination-4.jpg" alt="Enjoy the Beauty of the del Pincio">
+                            <p class="card-price">$340</p>
+                        </div>
+                        <div class="card-content ">
+                            <div class="card-title ">
+                                <h3>Enjoy the Beauty of the Milaidhoo</h3>
+                            </div>
+                            <p class="card-address">Island in the Maldives</p>
+                            <div class="card-rating">
+                                <i class="fa-solid fa-star">4.7</i>
+                                <p>(70 Review)</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="desti-cards">
+                        <div class="desti-card ">
+                            <img src="./images/destination-5.jpg" alt="Enjoy the Beauty of the del Pincio">
+                            <p class="card-price">$340</p>
+                        </div>
+                        <div class="card-content ">
+                            <div class="card-title ">
+                                <h3>Enjoy the Beauty of the Ko Tao</h3>
+                            </div>
+                            <p class="card-address">Island in the Gulf of Thailand</p>
+                            <div class="card-rating">
+                                <i class="fa-solid fa-star">4.5</i>
+                                <p>(985 Review)</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="desti-cards">
+                        <div class="desti-card ">
+                            <img src="./images/destination-6.jpg" alt="Enjoy the Beauty of the del Pincio">
+                            <p class="card-price">$340</p>
+                        </div>
+                        <div class="card-content ">
+                            <div class="card-title ">
+                                <h3>Enjoy the Beauty of the Grand Mecidiye Mosque</h3>
+                            </div>
+                            <p class="card-address">Mosque in Istanbul, Türkiye</p>
+                            <div class="card-rating">
+                                <i class="fa-solid fa-star">4.8</i>
+                                <p>(29.6k Review)</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="btn-des">
+                    <button class="hero-btn desti-btn">View All Destination</button> 
+                </div>  
+            </div>
+        </div>
+        <!-- #experience section -->
+        <div class=" exp">
+            <div class="exp-title">
+                <p><span style="color: blue;">Our Experience</span></p>
+                <h1>With Our Experience We Will Serve You</h1>
+                <p>Since we first opened we have always prioritized the convenience of 
+                    our users by providing low prices and with a easy process.</p>
+            </div>
+            <div class="exp-1024">
+                <div class="exp-content">
+                    <div class="exp-years">
+                        <h1 style="color: rgb(69, 69, 180);">20</h1>
+                        <div><p>Years </p>
+                            <p>Experience</p></div>
+                    </div>
+                    <div class="exp-years">
+                        <h1 style="color: rgb(69, 69, 180);;">460+</h1>
+                        <div><p>Destination  </p>
+                            <p>Collaboration</p></div>
+                    </div>
+                    <div class="exp-years">
+                        <h1 style="color: rgb(69, 69, 180);;">50K+</h1>
+                        <div><p>Happy </p>
+                            <p>Customer</p></div>
+                    </div>
+                </div>
+                <div class="exp-banner">
+                    <img src="./images/experience-banner.png" alt="exp-banner" height="735" width="600" class="hero-banner exp-banner-1024">
+                    <img src="./images/exp-shape.svg" alt="exp-shape" class="exp-shape" width="75" height="109">
+                </div>
+            </div>
+        </div>
+        <div class=" photo">
+            <div class="gallery-title">
+                <p><span style="color: blue;">Photo Gallery</span></p>
+                <h1>Photo’s From Travelers</h1>
+            </div>
+            <div class="gallery-list">
+                <div class="gallery-item">
+                    <img src="./images/gallery-1.jpg" alt="gallery" width="265"
+                    height="300">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery-2.jpg" alt="gallery" width="265"
+                    height="300">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery-3.jpg" alt="gallery" width="265"
+                    height="300">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery-4.jpg" alt="gallery" width="265"
+                    height="150" class="landscape-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery-5.jpg" alt="gallery" width="265"
+                    height="150" class="landscape-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery-6.jpg" alt="gallery" width="265"
+                    height="150" class="landscape-img">
+                </div>
+            </div>
+        </div>
+        <div class=" cta">
+            <div class="cta-title">
+                <h1>Prepare Yourself & Let’s Explore The Beauty Of The World
+                    <img src="./images/title-icon.svg" alt="">
+                </h1>
+                <p>We have many special offers especially for you.</p>
+                <button class="desti-btn hero-btn">Get Started</button>
+            </div> 
+        </div>
+        <div class=" footer" id="foot">
+            <div class="footer-title">
+                <img src="./images/logo.svg" alt="logo">
+                <p>We always make our customer
+                    happy by providing as many
+                    choices as possible</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-details">
+                <div class="footer-about">
+                    <div class="about-title">
+                        <h5>About</h5>
+                        <div class="about-list">
+                            <a href="#"><p>About Us</p></a>
+                            <a href="#"><p>Features</p></a>
+                            <a href="#"><p>News</p></a>
+                            <a href="#"><p>Menu</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-about company">
+                    <div class="about-title">
+                        <h5>Company</h5>
+                        <div class="about-list">
+                            <a href="#"><p>Why Company</p></a>
+                            <a href="#"><p>Partner With Us</p></a>
+                            <a href="#"><p>FAQ</p></a>
+                            <a href="#"><p>Blog</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-about support">
+                    <div class="about-title">
+                        <h5>Support</h5>
+                        <div class="about-list">
+                            <a href="#"><p>Account</p></a>
+                            <a href="#"><p>Support Center</p></a>
+                            <a href="#"><p>Feedback</p></a>
+                            <a href="#"><p>Contact Us</p></a>
+                            <a href="#"><p>Accessibility</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-about getinto">
+                <div class="about-title getinto-title" id="contact">
+                    <h5>Get In Touch</h5>
+                    <p>Question or feedback? We’d love to hear from you.</p>
+                    <div class="search-input">
+                        <input type="email" placeholder="Email address" class="inp">
+                        <button class="inp-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <p class="Copyright">Copyright <span class="Copyright-year"></span>.Made by 
+                <a href="https://www.linkedin.com/in/pavan-kumar-kasa-151555287/">
+                    <i>PavanKumar Kasa</i></a></p>
+            <ul class="ul-downlist">
+                <li style="list-style: none;"><a href="#" style="font-size: 1rem;">Terms and Condition</a></li>
+                <li style="list-style: none;"><a href="#" style="font-size: 1rem;">Privacy and Policy</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
